@@ -1,0 +1,3 @@
+SELECT product.sku,product.product_name from product
+WHERE product.id NOT IN(Select product_id from invoice_item)
+ORDER BY sku;
