@@ -1,3 +1,3 @@
-select city.name from city,country
-where city.countrycode=country.code 
-and continent="africa"; 
+select city.name from city 
+join country on city.countrycode=country.code
+where continent="africa"
